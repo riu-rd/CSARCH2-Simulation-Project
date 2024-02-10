@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary integer multiplication</title>
+    <script src="opscript.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css"> 
+</head>
+<body>
+    <nav>
+        <div class="container">
+            Binary Multiplier
+        </div>
+        <div class="container">
+            By Daniel Philippe Capinpin, Dale Pons Gregorio, Darius Ardales, and Mark Christian Tan (Group 3 - S14)
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="top">
+                <h1>Multiply</h1>
+                <div class="user-input-box">
+                    <div>
+                        <label for="multiplicand">Multiplicand:</label><br>
+                        <input type="text" id="inputM" name="mBox" class="inputBox" placeholder="Input Multiplicand"><br>
+
+                    </div>
+                    <div>
+                        <label for="multiplier">Multiplier:</label><br>
+                        <input type="text" id="inputN" name="bBox" class="inputBox" placeholder="Input Multiplier"><br>
+
+                    </div>
+                    <p id="errorText"></p>
+                </div>
+
+                <div class="mult-type-radio">
+                    <h2>Select the type of multiplication</h2>
+                    <div>
+                        <input type="radio" id="penpaper-radio" name="mult_type" value="PenPaper" checked> 
+                        <label>Pen and Paper</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="booth-radio" name="mult_type" value="Booth" > 
+                        <label>Booth's</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="extended-radio" name="mult_type" value="Extended" > 
+                        <label>Extended Booth's</label>
+                    </div>
+                </div>
+
+                <div class="input-type-radio">
+                    <h2>Select the type of input</h2>
+                    <div>
+                        <input type="radio" id="binary-radio" name="input_type" value="Binary" checked> 
+                        <label>Binary</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="decimal-radio" name="input_type" value="Decimal" > 
+                        <label>Decimal</label>
+                    </div>
+
+                </div>
+
+                <div class="output-type-radio">
+                    <h2>Select the type of output</h2>
+                    <div>
+                        <input type="radio" id="step-radio" name="output_type" value="Step" checked> 
+                        <label>Step-By-Step</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="all-radio" name="output_type" value="All" > 
+                        <label>All</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="file-radio" name="output_type" value="FileOut" > 
+                        <label>File</label>
+                    </div>
+                </div>
+
+
+                <div class="calculate-button">
+                    <button class="calculate-button-press" id="submit">Calculate</button>
+                </div>
+            </div>
+            <div class="bottom">
+                <h1>Output</h1>
+                    <div class="output"></div>
+                    <div class="step"></div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
